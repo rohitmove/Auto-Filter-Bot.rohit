@@ -18,16 +18,16 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-USERNAME = environ.get('USERNAME', 'https://telegram.me/TechifyGuru')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "")
+API_ID = int(environ.get('API_ID', '21489941'))
+API_HASH = environ.get('API_HASH', '84e42582165ad1c99823bc4e910eefe7')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7898939709:AAGH4hFsQovrWhYqCoUl9IgoxKKAZu5RJXg')
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6732693429').split()]
+USERNAME = environ.get('USERNAME', 't.me/Rohit_chaudhar')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002316731766'))
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002314544352').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://kantravi3280:xln02FnA4Qi8A1XO@cluster0.32nva.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rahul")
+DATABASE_NAME = environ.get('DATABASE_NAME', "kantravi3280")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahul')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wam.jpg')
